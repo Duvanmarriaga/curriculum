@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Duván Marriaga · Desarrollador Full Stack</title>
+<meta name="description" content="Duván Alfonso Marriaga Villar - Desarrollador Full Stack & Arquitecto de Software. Laravel, PHP, Vue.js, Docker.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Plus Jakarta Sans', 'sans-serif'],
+          display: ['Space Grotesk', 'sans-serif'],
+        },
+        colors: {
+          ink: '#0b1120',
+          panel: '#111a2e',
+          accent: '#38bdf8',
+          accent2: '#a78bfa',
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background-color: #0b1120; }
+
+  .glow {
+    background: radial-gradient(60% 60% at 50% 0%, rgba(56,189,248,0.18) 0%, rgba(167,139,250,0.10) 45%, rgba(11,17,32,0) 80%);
+  }
+
+  .grid-bg {
+    background-image: linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+    background-size: 48px 48px;
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+  }
+
+  .card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015));
+    border: 1px solid rgba(255,255,255,0.07);
+  }
+
+  .tag {
+    background: rgba(56,189,248,0.08);
+    border: 1px solid rgba(56,189,248,0.18);
+    color: #7dd3fc;
+  }
+
+  .timeline-dot::before {
+    content: '';
+    position: absolute;
+    left: -2.6rem;
+    top: 0.5rem;
+    width: 11px;
+    height: 11px;
+    border-radius: 9999px;
+    background: linear-gradient(135deg, #38bdf8, #a78bfa);
+    box-shadow: 0 0 0 4px rgba(56,189,248,0.12);
+  }
+
+  .fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .gradient-text {
+    background: linear-gradient(90deg, #38bdf8, #a78bfa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+</style>
+</head>
+<body class="text-slate-200 font-sans antialiased">
+
+  <!-- NAV -->
+  <header class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-ink/60 border-b border-white/5">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#top" class="font-display font-bold text-lg tracking-tight">
+        Duván<span class="gradient-text">.</span>Marriaga
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-slate-300">
+        <a href="#perfil" class="hover:text-accent transition">Perfil</a>
+        <a href="#experiencia" class="hover:text-accent transition">Experiencia</a>
+        <a href="#proyecto" class="hover:text-accent transition">Proyecto</a>
+        <a href="#habilidades" class="hover:text-accent transition">Habilidades</a>
+        <a href="#contacto" class="hover:text-accent transition">Contacto</a>
+      </nav>
+      <a href="mailto:duvanalf17@gmail.com" class="text-sm font-semibold px-4 py-2 rounded-full bg-gradient-to-r from-accent to-accent2 text-ink hover:opacity-90 transition">
+        Contactar
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="relative pt-32 pb-24 px-6 glow">
+    <div class="absolute inset-0 grid-bg pointer-events-none"></div>
+    <div class="relative max-w-5xl mx-auto text-center">
+      <p class="inline-flex items-center gap-2 text-sm text-accent tag rounded-full px-4 py-1 mb-6 fade-up">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Disponible para trabajo remoto
+      </p>
+      <h1 class="font-display text-4xl sm:text-6xl font-bold leading-tight tracking-tight fade-up">
+        Duván Alfonso <span class="gradient-text">Marriaga Villar</span>
+      </h1>
+      <p class="mt-4 text-lg sm:text-xl text-slate-400 fade-up">
+        Desarrollador Full Stack · Arquitecto de Software
+      </p>
+      <p class="mt-6 max-w-2xl mx-auto text-slate-400 leading-relaxed fade-up">
+        Ingeniero en Sistemas con 5+ años de experiencia construyendo soluciones web escalables.
+        Especializado en arquitectura limpia con <span class="text-slate-200 font-medium">Laravel</span>,
+        <span class="text-slate-200 font-medium">PHP</span> y <span class="text-slate-200 font-medium">Vue.js</span>,
+        con experiencia en <span class="text-slate-200 font-medium">Python</span> y
+        <span class="text-slate-200 font-medium">FastAPI</span>, y sólido manejo de DevOps (Docker, Nginx, Linux).
+      </p>
+
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-4 fade-up">
+        <a href="CV-Duvan-Marriaga-Villar.pdf" download class="px-6 py-3 rounded-full bg-gradient-to-r from-accent to-accent2 text-ink font-semibold hover:opacity-90 transition shadow-lg shadow-accent/20 inline-flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Descargar CV
+        </a>
+        <a href="mailto:duvanalf17@gmail.com" class="px-6 py-3 rounded-full card text-slate-200 font-semibold hover:border-accent/40 transition">
+          Escríbeme
+        </a>
+        <a href="https://github.com/duvanmarriaga" target="_blank" rel="noopener" class="px-6 py-3 rounded-full card text-slate-200 font-semibold hover:border-accent/40 transition">
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/duvan-alfonso-marriaga-villar-9100a3191" target="_blank" rel="noopener" class="px-6 py-3 rounded-full card text-slate-200 font-semibold hover:border-accent/40 transition">
+          LinkedIn
+        </a>
+      </div>
+
+      <div class="mt-12 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-slate-500 fade-up">
+        <span>📍 Santa Marta, Colombia</span>
+        <span>·</span>
+        <span>✉️ duvanalf17@gmail.com</span>
+        <span>·</span>
+        <span>📱 (+57) 310 392 9359</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERFIL -->
+  <section id="perfil" class="py-20 px-6 border-t border-white/5">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-10 items-start">
+        <div class="fade-up">
+          <h2 class="font-display text-2xl font-bold mb-2">Perfil profesional</h2>
+          <div class="h-1 w-12 rounded-full bg-gradient-to-r from-accent to-accent2"></div>
+        </div>
+        <div class="md:col-span-2 fade-up">
+          <p class="text-slate-400 leading-relaxed">
+            Ingeniero en Sistemas graduado con <span class="text-slate-200">5+ años de experiencia</span> en
+            desarrollo web Full Stack. He liderado proyectos en sectores
+            <span class="text-slate-200">turístico, corporativo y de abastecimiento</span>, creando
+            soluciones escalables que automatizan procesos y mejoran la experiencia del usuario.
+            Disponible para trabajo remoto nacional e internacional.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section id="experiencia" class="py-20 px-6 border-t border-white/5">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-12 fade-up">
+        <h2 class="font-display text-2xl font-bold mb-2">Experiencia laboral</h2>
+        <div class="h-1 w-12 rounded-full bg-gradient-to-r from-accent to-accent2"></div>
+      </div>
+
+      <div class="space-y-10 border-l border-white/10 pl-8">
+
+        <div class="relative timeline-dot fade-up">
+          <p class="text-sm text-accent font-semibold">2024 — Actualidad</p>
+          <h3 class="font-display text-xl font-bold mt-1">Enternova S.A.S.</h3>
+          <p class="text-sm text-slate-500 mb-3">Desarrollador Web / Arquitecto de Software · Proyecto colaborativo</p>
+          <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc list-inside marker:text-accent">
+            <li>Diseño e implementación de soluciones de abastecimiento y gestión de proveedores con Laravel 11/12, PHP, MySQL y Docker.</li>
+            <li>Mejora de la eficiencia operativa en procesos internos en un <span class="text-slate-200 font-semibold">+25%</span> mediante automatización de flujos de trabajo.</li>
+            <li>Definición de arquitectura limpia y estándares de desarrollo para el equipo técnico.</li>
+            <li>Desarrollo de API de pagos con FastAPI y Wompi, integrando procesamiento de transacciones seguras.</li>
+          </ul>
+        </div>
+
+        <div class="relative timeline-dot fade-up">
+          <p class="text-sm text-accent font-semibold">2023 — 2024</p>
+          <h3 class="font-display text-xl font-bold mt-1">Acotur</h3>
+          <p class="text-sm text-slate-500 mb-3">Desarrollador Web · Proyecto colaborativo</p>
+          <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc list-inside marker:text-accent">
+            <li>Desarrollo de plataformas web para tour operadores usando Laravel 11, Python, SQL Server, Docker y Tailwind CSS.</li>
+            <li>Reducción de tiempos de despliegue en un <span class="text-slate-200 font-semibold">30%</span> y mejora significativa de la visibilidad digital de los clientes.</li>
+            <li>Implementación de pipelines CI/CD con GitHub Actions y servidores Linux/Nginx.</li>
+          </ul>
+        </div>
+
+        <div class="relative timeline-dot fade-up">
+          <p class="text-sm text-accent font-semibold">2021 — 2023</p>
+          <h3 class="font-display text-xl font-bold mt-1">Baquianos Travel</h3>
+          <p class="text-sm text-slate-500 mb-3">Desarrollador Web · Proyecto colaborativo</p>
+          <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc list-inside marker:text-accent">
+            <li>Desarrollo y mantenimiento de plataformas de gestión turística con Laravel 9, Django, Python, MySQL, Bootstrap y JavaScript.</li>
+            <li>Automatización de procesos operativos que redujo la carga manual del equipo en <span class="text-slate-200 font-semibold">20 horas semanales</span>.</li>
+            <li>Integración de APIs externas de pagos y servicios de terceros.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTO DESTACADO -->
+  <section id="proyecto" class="py-20 px-6 border-t border-white/5">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-12 fade-up">
+        <h2 class="font-display text-2xl font-bold mb-2">Proyecto personal destacado</h2>
+        <div class="h-1 w-12 rounded-full bg-gradient-to-r from-accent to-accent2"></div>
+      </div>
+
+      <div class="card rounded-3xl p-8 sm:p-10 fade-up">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+          <h3 class="font-display text-2xl font-bold">
+            Sytel<span class="gradient-text">.co</span>
+          </h3>
+          <a href="https://sytel.co" target="_blank" rel="noopener" class="text-sm px-4 py-2 rounded-full tag font-semibold hover:bg-accent/15 transition">
+            Visitar sitio →
+          </a>
+        </div>
+        <p class="text-slate-400 leading-relaxed mb-6">
+          Plataforma SaaS colaborativa para restaurantes, cafeterías y bares que permite crear sitios web
+          profesionales para mostrar menú, servicios y portafolio. Actualmente en producción con
+          <span class="text-slate-200 font-semibold"> 2 negocios activos</span> generando ingresos.
+        </p>
+        <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc list-inside marker:text-accent mb-6">
+          <li>Backend: API REST con Laravel 12 + PostgreSQL, desplegada en servidor Linux con Nginx y Docker.</li>
+          <li>Frontend desarrollado en equipo con diseño responsivo optimizado para móvil.</li>
+          <li>IA integrada: API propia con modelos locales (Ollama) para traducción automática de menús, recomendaciones de productos y chatbot de soporte.</li>
+        </ul>
+        <div class="flex flex-wrap gap-2">
+          <span class="tag text-xs font-medium px-3 py-1 rounded-full">Laravel 12</span>
+          <span class="tag text-xs font-medium px-3 py-1 rounded-full">PostgreSQL</span>
+          <span class="tag text-xs font-medium px-3 py-1 rounded-full">Docker</span>
+          <span class="tag text-xs font-medium px-3 py-1 rounded-full">Nginx</span>
+          <span class="tag text-xs font-medium px-3 py-1 rounded-full">Ollama / IA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="py-20 px-6 border-t border-white/5">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-12 fade-up">
+        <h2 class="font-display text-2xl font-bold mb-2">Habilidades técnicas</h2>
+        <div class="h-1 w-12 rounded-full bg-gradient-to-r from-accent to-accent2"></div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-6">
+
+        <div class="card rounded-2xl p-6 fade-up">
+          <h3 class="font-display font-semibold text-slate-200 mb-3">Lenguajes</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag text-xs px-3 py-1 rounded-full">PHP · Avanzado</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">JavaScript · Avanzado</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Java · Avanzado</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Python · Intermedio</span>
+          </div>
+        </div>
+
+        <div class="card rounded-2xl p-6 fade-up">
+          <h3 class="font-display font-semibold text-slate-200 mb-3">Backend</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag text-xs px-3 py-1 rounded-full">Laravel · Avanzado</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">FastAPI · Intermedio</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Spring Boot · Básico</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Django / Flask · Básico</span>
+          </div>
+        </div>
+
+        <div class="card rounded-2xl p-6 fade-up">
+          <h3 class="font-display font-semibold text-slate-200 mb-3">Frontend</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag text-xs px-3 py-1 rounded-full">Vue.js · Intermedio</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">HTML / CSS</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Bootstrap · Avanzado</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Tailwind · Intermedio</span>
+          </div>
+        </div>
+
+        <div class="card rounded-2xl p-6 fade-up">
+          <h3 class="font-display font-semibold text-slate-200 mb-3">Bases de datos</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag text-xs px-3 py-1 rounded-full">MySQL · Avanzado</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">PostgreSQL · Intermedio</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">SQL Server · Intermedio</span>
+          </div>
+        </div>
+
+        <div class="card rounded-2xl p-6 fade-up">
+          <h3 class="font-display font-semibold text-slate-200 mb-3">DevOps / Cloud</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag text-xs px-3 py-1 rounded-full">Docker</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Linux / Nginx · Avanzado</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">AWS · Intermedio</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Azure AZ-900</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Cloudflare · Intermedio</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Google Cloud · Básico</span>
+          </div>
+        </div>
+
+        <div class="card rounded-2xl p-6 fade-up">
+          <h3 class="font-display font-semibold text-slate-200 mb-3">IA / LLMs &amp; Versionado</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag text-xs px-3 py-1 rounded-full">Ollama (modelos locales)</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Integración APIs IA</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">GitHub · Avanzado</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">GitLab · Intermedio</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMACIÓN -->
+  <section id="formacion" class="py-20 px-6 border-t border-white/5">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+      <div class="fade-up">
+        <h2 class="font-display text-2xl font-bold mb-2">Formación académica</h2>
+        <div class="h-1 w-12 rounded-full bg-gradient-to-r from-accent to-accent2 mb-6"></div>
+        <div class="card rounded-2xl p-6">
+          <h3 class="font-display font-semibold text-slate-200">Ingeniería en Sistemas</h3>
+          <p class="text-sm text-slate-500 mt-1">Universidad del Magdalena · Graduado</p>
+        </div>
+      </div>
+
+      <div class="fade-up">
+        <h2 class="font-display text-2xl font-bold mb-2">Formación complementaria</h2>
+        <div class="h-1 w-12 rounded-full bg-gradient-to-r from-accent to-accent2 mb-6"></div>
+        <div class="card rounded-2xl p-6 space-y-3 text-sm text-slate-400">
+          <p>📘 Curso Laravel 12 — <span class="text-slate-200">Udemy</span></p>
+          <p>📘 Curso GitHub — <span class="text-slate-200">Platzi</span></p>
+          <p>📘 Cloud Computing con AWS y Azure — <span class="text-slate-200">Universidad de los Andes</span></p>
+          <p>🌐 Inglés: <span class="text-slate-200">B2 (en formación)</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-24 px-6 border-t border-white/5 glow">
+    <div class="max-w-3xl mx-auto text-center fade-up">
+      <h2 class="font-display text-3xl sm:text-4xl font-bold mb-4">
+        ¿Trabajamos <span class="gradient-text">juntos</span>?
+      </h2>
+      <p class="text-slate-400 mb-10">
+        Disponible para trabajo remoto nacional e internacional. Escríbeme y conversemos sobre tu proyecto.
+      </p>
+
+      <form
+        action="https://formsubmit.co/duvanalf17@gmail.com"
+        method="POST"
+        class="card rounded-3xl p-6 sm:p-8 text-left space-y-5"
+      >
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde tu landing de currículum">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="true">
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label for="name" class="block text-sm font-medium text-slate-300 mb-2">Nombre</label>
+            <input
+              type="text" id="name" name="name" required placeholder="Tu nombre"
+              class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-sm text-slate-200 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent/40 transition"
+            >
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-slate-300 mb-2">Email</label>
+            <input
+              type="email" id="email" name="email" required placeholder="tu@email.com"
+              class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-sm text-slate-200 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent/40 transition"
+            >
+          </div>
+        </div>
+
+        <div>
+          <label for="subject" class="block text-sm font-medium text-slate-300 mb-2">Asunto</label>
+          <input
+            type="text" id="subject" name="subject" placeholder="Sobre qué quieres hablar"
+            class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-sm text-slate-200 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent/40 transition"
+          >
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-medium text-slate-300 mb-2">Mensaje</label>
+          <textarea
+            id="message" name="message" required rows="5" placeholder="Cuéntame sobre tu proyecto..."
+            class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-sm text-slate-200 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent/40 transition resize-none"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full sm:w-auto px-8 py-3 rounded-full bg-gradient-to-r from-accent to-accent2 text-ink font-semibold hover:opacity-90 transition shadow-lg shadow-accent/20"
+        >
+          Enviar mensaje
+        </button>
+      </form>
+
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <a href="mailto:duvanalf17@gmail.com" class="px-6 py-3 rounded-full bg-gradient-to-r from-accent to-accent2 text-ink font-semibold hover:opacity-90 transition shadow-lg shadow-accent/20">
+          duvanalf17@gmail.com
+        </a>
+        <a href="https://github.com/duvanmarriaga" target="_blank" rel="noopener" class="px-6 py-3 rounded-full card font-semibold hover:border-accent/40 transition">
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/duvan-alfonso-marriaga-villar-9100a3191" target="_blank" rel="noopener" class="px-6 py-3 rounded-full card font-semibold hover:border-accent/40 transition">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8 px-6 text-center text-sm text-slate-600 border-t border-white/5">
+    © <span id="year"></span> Duván Alfonso Marriaga Villar · Hecho con ❤ desde Santa Marta, Colombia
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
