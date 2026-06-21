@@ -94,7 +94,7 @@
       <nav class="hidden md:flex items-center gap-8 text-sm text-slate-300">
         <a href="#perfil" class="hover:text-accent transition">Perfil</a>
         <a href="#experiencia" class="hover:text-accent transition">Experiencia</a>
-        <a href="#proyecto" class="hover:text-accent transition">Proyecto</a>
+        <a href="#proyectos" class="hover:text-accent transition">Proyectos</a>
         <a href="#habilidades" class="hover:text-accent transition">Habilidades</a>
         <a href="#contacto" class="hover:text-accent transition">Contacto</a>
       </nav>
@@ -221,40 +221,93 @@
     </div>
   </section>
 
-  <!-- PROYECTO DESTACADO -->
-  <section id="proyecto" class="py-20 px-6 border-t border-white/5">
+  <!-- PROYECTOS DESTACADOS -->
+  <section id="proyectos" class="py-20 px-6 border-t border-white/5">
     <div class="max-w-5xl mx-auto">
       <div class="mb-12 fade-up">
-        <h2 class="font-display text-2xl font-bold mb-2">Proyecto personal destacado</h2>
+        <h2 class="font-display text-2xl font-bold mb-2">Proyectos destacados</h2>
         <div class="h-1 w-12 rounded-full bg-gradient-to-r from-accent to-accent2"></div>
       </div>
 
-      <div class="card rounded-3xl p-8 sm:p-10 fade-up">
-        <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
-          <h3 class="font-display text-2xl font-bold">
-            Sytel<span class="gradient-text">.co</span>
-          </h3>
-          <a href="https://sytel.co" target="_blank" rel="noopener" class="text-sm px-4 py-2 rounded-full tag font-semibold hover:bg-accent/15 transition">
-            Visitar sitio →
-          </a>
+      <div class="space-y-8">
+
+        <div class="card rounded-3xl p-8 sm:p-10 fade-up">
+          <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+            <h3 class="font-display text-2xl font-bold">
+              Sytel<span class="gradient-text">.co</span>
+            </h3>
+            <a href="https://sytel.co" target="_blank" rel="noopener" class="text-sm px-4 py-2 rounded-full tag font-semibold hover:bg-accent/15 transition">
+              Visitar sitio →
+            </a>
+          </div>
+          <p class="text-slate-400 leading-relaxed mb-6">
+            Plataforma SaaS colaborativa para restaurantes, cafeterías y bares que permite crear sitios web
+            profesionales para mostrar menú, servicios y portafolio. Actualmente en producción con
+            <span class="text-slate-200 font-semibold"> 2 negocios activos</span> generando ingresos.
+          </p>
+          <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc list-inside marker:text-accent mb-6">
+            <li>Backend: API REST con Laravel 12 + PostgreSQL, desplegada en servidor Linux con Nginx y Docker.</li>
+            <li>Frontend desarrollado en equipo con diseño responsivo optimizado para móvil.</li>
+            <li>IA integrada: API propia con modelos locales (Ollama) para traducción automática de menús, recomendaciones de productos y chatbot de soporte.</li>
+          </ul>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag text-xs font-medium px-3 py-1 rounded-full">Laravel 12</span>
+            <span class="tag text-xs font-medium px-3 py-1 rounded-full">PostgreSQL</span>
+            <span class="tag text-xs font-medium px-3 py-1 rounded-full">Docker</span>
+            <span class="tag text-xs font-medium px-3 py-1 rounded-full">Nginx</span>
+            <span class="tag text-xs font-medium px-3 py-1 rounded-full">Ollama / IA</span>
+          </div>
         </div>
-        <p class="text-slate-400 leading-relaxed mb-6">
-          Plataforma SaaS colaborativa para restaurantes, cafeterías y bares que permite crear sitios web
-          profesionales para mostrar menú, servicios y portafolio. Actualmente en producción con
-          <span class="text-slate-200 font-semibold"> 2 negocios activos</span> generando ingresos.
-        </p>
-        <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc list-inside marker:text-accent mb-6">
-          <li>Backend: API REST con Laravel 12 + PostgreSQL, desplegada en servidor Linux con Nginx y Docker.</li>
-          <li>Frontend desarrollado en equipo con diseño responsivo optimizado para móvil.</li>
-          <li>IA integrada: API propia con modelos locales (Ollama) para traducción automática de menús, recomendaciones de productos y chatbot de soporte.</li>
-        </ul>
-        <div class="flex flex-wrap gap-2">
-          <span class="tag text-xs font-medium px-3 py-1 rounded-full">Laravel 12</span>
-          <span class="tag text-xs font-medium px-3 py-1 rounded-full">PostgreSQL</span>
-          <span class="tag text-xs font-medium px-3 py-1 rounded-full">Docker</span>
-          <span class="tag text-xs font-medium px-3 py-1 rounded-full">Nginx</span>
-          <span class="tag text-xs font-medium px-3 py-1 rounded-full">Ollama / IA</span>
+
+        <div class="card rounded-3xl p-8 sm:p-10 fade-up">
+          <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+            <h3 class="font-display text-2xl font-bold">
+              Destia<span class="gradient-text">.co</span>
+            </h3>
+            <a href="https://destia.co" target="_blank" rel="noopener" class="text-sm px-4 py-2 rounded-full tag font-semibold hover:bg-accent/15 transition">
+              Visitar sitio →
+            </a>
+          </div>
+          <p class="text-slate-400 leading-relaxed mb-6">
+            Sistema operativo para agencias de viajes y touroperadores que centraliza CRM, reservas,
+            cobros y comunicación con clientes vía WhatsApp, reemplazando hojas de cálculo y herramientas
+            dispersas. Incluye agentes de IA para seguimiento comercial y generación automática de itinerarios.
+            <span class="text-slate-200 font-semibold"> Proyecto privado</span> en el que colaboré en sus etapas
+            iniciales como desarrollador Full Stack.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag text-xs font-medium px-3 py-1 rounded-full">PHP</span>
+            <span class="tag text-xs font-medium px-3 py-1 rounded-full">MySQL</span>
+            <span class="tag text-xs font-medium px-3 py-1 rounded-full">Tailwind CSS</span>
+            <span class="tag text-xs font-medium px-3 py-1 rounded-full">Bootstrap 5</span>
+          </div>
         </div>
+
+        <div class="card rounded-3xl p-8 sm:p-10 fade-up">
+          <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+            <h3 class="font-display text-2xl font-bold">
+              Pagos<span class="gradient-text">Suplind</span>
+            </h3>
+            <a href="https://pagos.suplind.com" target="_blank" rel="noopener" class="text-sm px-4 py-2 rounded-full tag font-semibold hover:bg-accent/15 transition">
+              Visitar sitio →
+            </a>
+          </div>
+          <p class="text-slate-400 leading-relaxed mb-6">
+            API intermediaria de pagos desarrollada para Enternova que integra la pasarela
+            <span class="text-slate-200 font-medium"> Wompi</span>. Permite que otras aplicaciones soliciten
+            la generación de formularios/enlaces de compra, tokeniza tarjetas de forma segura y notifica en
+            tiempo real los cambios de estado de cada transacción mediante webhooks.
+            <span class="text-slate-200 font-semibold"> Proyecto privado</span> desarrollado para la empresa
+            donde trabajo actualmente.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag text-xs font-medium px-3 py-1 rounded-full">FastAPI</span>
+            <span class="tag text-xs font-medium px-3 py-1 rounded-full">Python</span>
+            <span class="tag text-xs font-medium px-3 py-1 rounded-full">Wompi</span>
+            <span class="tag text-xs font-medium px-3 py-1 rounded-full">Webhooks</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
