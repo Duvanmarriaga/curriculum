@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>CV - Duván Marriaga</title>
+<style>
+  @page { size: letter; margin: 14mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #1e293b;
+    font-size: 9.3pt;
+    line-height: 1.38;
+    margin: 0;
+  }
+  h1 { font-size: 17pt; margin: 0 0 2px; color: #0f172a; }
+  .title { font-size: 10.5pt; color: #0284c7; font-weight: 600; margin: 0 0 4px; }
+  .contact { font-size: 8.3pt; color: #475569; margin: 0 0 10px; }
+  .contact a { color: #475569; text-decoration: none; }
+  h2 {
+    font-size: 9.6pt; letter-spacing: 0.06em; text-transform: uppercase;
+    color: #0284c7; border-bottom: 1.2px solid #38bdf8;
+    margin: 9px 0 4px; padding-bottom: 2px;
+  }
+  p { margin: 0 0 4px; }
+  ul { margin: 0 0 2px; padding-left: 13px; }
+  li { margin-bottom: 1px; }
+  .job { margin-bottom: 5px; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .job-title { font-weight: 700; color: #0f172a; }
+  .job-sub { font-style: italic; color: #64748b; font-size: 8.5pt; }
+  .job-date { font-size: 8.3pt; color: #0284c7; font-weight: 600; white-space: nowrap; }
+  .skills p { margin: 0 0 2.5px; }
+  .skills b { color: #0f172a; }
+  .edu-row { display: flex; justify-content: space-between; }
+  .footer-note { font-size: 8pt; color: #64748b; }
+  .proj-row { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 2px; }
+  .proj-row > span:first-child { flex: 1; }
+  .proj-name { font-weight: 700; color: #0f172a; }
+  .proj-link { font-size: 8.3pt; white-space: nowrap; }
+  .proj-link a { color: #0284c7; text-decoration: none; }
+</style>
+</head>
+<body>
+
+  <h1>Duván Alfonso Marriaga Villar</h1>
+  <p class="title">Desarrollador Backend Senior (Node.js / PHP / Python)</p>
+  <p class="contact">
+    duvanalf17@gmail.com · (+57) 310 392 9359 · Santa Marta, Colombia (disponible remoto) ·
+    <a href="https://github.com/duvanmarriaga" target="_blank">github.com/duvanmarriaga</a> ·
+    <a href="https://www.linkedin.com/in/duvan-alfonso-marriaga-villar-9100a3191" target="_blank">LinkedIn</a> ·
+    <a href="https://duvanmarriaga.github.io/curriculum" target="_blank">duvanmarriaga.github.io/curriculum</a>
+  </p>
+
+  <h2>Perfil profesional</h2>
+  <p>
+    Ingeniero en Sistemas con 5+ años de experiencia diseñando arquitectura backend y APIs escalables.
+    Especializado en Laravel, PHP y Python, con foco en arquitectura limpia, integración de pasarelas de pago
+    y despliegue containerizado (Docker, Nginx, Linux, CI/CD). Manejo complementario de Node.js y frontend
+    (Vue/React) para liderar features end-to-end. He definido estándares técnicos y liderado el diseño de
+    soluciones en sectores turístico, corporativo y de abastecimiento, automatizando procesos operativos con
+    impacto medible en eficiencia.
+  </p>
+
+  <h2>Experiencia laboral</h2>
+
+  <div class="job">
+    <div class="job-head">
+      <span><span class="job-title">Enternova S.A.S.</span> <span class="job-sub">— Arquitecto de Software / Desarrollador Backend</span></span>
+      <span class="job-date">2024 – Actualidad</span>
+    </div>
+    <ul>
+      <li>Definición de arquitectura limpia y estándares técnicos para soluciones de abastecimiento y gestión de proveedores (Laravel 11/12, PHP, MySQL, Docker) con +25% de eficiencia operativa.</li>
+      <li>Diseño e implementación de API de pagos con FastAPI + Wompi; manejo simultáneo de varios proyectos en distintos stacks, incl. servicios en Node.js.</li>
+      <li>Reducción del 50% en tickets de error reportados en plataformas de producción mediante refactorización y estandarización de código.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <span><span class="job-title">Acotur</span> <span class="job-sub">— Desarrollador Backend · Freelance</span></span>
+      <span class="job-date">2023 – 2024</span>
+    </div>
+    <ul>
+      <li>Sitio destinosemergentescolombia.com (Laravel 11, Python, SQL Server, Docker, Tailwind); -30% en tiempos de despliegue vía CI/CD con GitHub Actions.</li>
+      <li>Aumento de visibilidad digital para touroperadores y destinos emergentes de Colombia mediante presencia web B2B.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <span><span class="job-title">Destia</span> <span class="job-sub">— Desarrollador Backend · Freelance</span></span>
+      <span class="job-date">2021 – 2023</span>
+    </div>
+    <ul>
+      <li>Etapas iniciales de Destia.co, sistema de CRM/reservas para touroperadores (PHP, MySQL, Tailwind, Bootstrap).</li>
+    </ul>
+  </div>
+
+  <p class="footer-note" style="margin: -2px 0 6px;">Destia y Acotur se desarrollaron en paralelo como freelance, mientras se mantenía el rol de tiempo completo en Baquianos Travel.</p>
+
+  <div class="job">
+    <div class="job-head">
+      <span><span class="job-title">Baquianos Travel</span> <span class="job-sub">— Desarrollador Backend · Tiempo completo</span></span>
+      <span class="job-date">2021 – 2024</span>
+    </div>
+    <ul>
+      <li>Plataformas de gestión turística (Laravel 9, Django, Python, MySQL, JS); optimización de velocidad del sitio baquianos.com en un 30%.</li>
+      <li>Automatización de tareas y procesos operacionales que ahorró 20h/semana de trabajo manual.</li>
+    </ul>
+  </div>
+
+  <h2>Habilidades técnicas</h2>
+  <div class="skills">
+    <p><b>Backend / Arquitectura:</b> Laravel, PHP, Java (Avanzado) · Node.js, FastAPI (Intermedio-Avanzado) · Python, Django/Flask, Spring Boot (Intermedio)</p>
+    <p><b>Bases de datos:</b> MySQL (Avanzado) · PostgreSQL, SQL Server (Intermedio)</p>
+    <p><b>DevOps / Cloud:</b> Docker, Linux/Nginx, CI/CD (GitHub Actions) (Avanzado) · AWS, Cloudflare (Intermedio) · Azure, GCP (Básico)</p>
+    <p><b>Frontend (soporte) / IA:</b> Vue.js, React, Tailwind (Intermedio) · Ollama / integración de LLMs</p>
+  </div>
+
+  <h2>Proyectos destacados</h2>
+  <div class="proj-row">
+    <span><span class="proj-name">Destinos Emergentes Colombia</span> — plataforma web para promoción turística de destinos B2B (Laravel 11, SQL Server, CI/CD).</span>
+    <span class="proj-link"><a href="https://destinosemergentescolombia.com" target="_blank">destinosemergentescolombia.com</a></span>
+  </div>
+  <div class="proj-row">
+    <span><span class="proj-name">API de pagos (Enternova)</span> — servicio backend en FastAPI integrado con Wompi para procesar transacciones seguras.</span>
+    <span class="proj-link"><a href="https://pagos.suplind.com/" target="_blank">pagos.suplind.com</a></span>
+  </div>
+  <div class="proj-row">
+    <span><span class="proj-name">Destia.co</span> — sistema operativo (CRM, reservas, cobros, WhatsApp) para agencias de viajes y touroperadores.</span>
+    <span class="proj-link"><a href="https://destia.co" target="_blank">destia.co</a></span>
+  </div>
+
+  <h2>Formación</h2>
+  <div class="edu-row">
+    <span>Ingeniería en Sistemas — Universidad del Magdalena (Graduado) · <a href="https://duvanmarriaga.github.io/curriculum/certificates/diploma-universidad-del-magdalena.pdf" target="_blank" style="color:#0284c7;">Ver diploma</a></span>
+    <span class="footer-note">Inglés: B2 (en formación)</span>
+  </div>
+  <p class="footer-note">Cursos: Laravel 12 (Udemy) · GitHub (Platzi) · Cloud Computing AWS/Azure (Universidad de los Andes)</p>
+
+</body>
+</html>
