@@ -1,0 +1,106 @@
+DUVÁN ALFONSO MARRIAGA VILLAR
+Desarrollador Backend Senior (Node.js / PHP / Python)
+
+CONTACTO
+--------
+Email: duvanalf17@gmail.com
+Teléfono: (+57) 310 392 9359
+Ubicación: Santa Marta, Colombia (disponible remoto)
+GitHub: https://github.com/duvanmarriaga
+LinkedIn: https://www.linkedin.com/in/duvan-alfonso-marriaga-villar-9100a3191
+Portafolio/CV: https://duvanmarriaga.github.io/curriculum
+
+PERFIL PROFESIONAL
+-------------------
+Ingeniero en Sistemas con 5+ años de experiencia diseñando arquitectura backend y APIs
+escalables. Especializado en Laravel, PHP y Python, con foco en arquitectura limpia,
+integración de pasarelas de pago y despliegue containerizado (Docker, Nginx, Linux,
+CI/CD). Manejo complementario de Node.js y frontend (Vue/React) para liderar features
+end-to-end. Ha definido estándares técnicos y liderado el diseño de soluciones en
+sectores turístico, corporativo y de abastecimiento, automatizando procesos operativos
+con impacto medible en eficiencia.
+
+EXPERIENCIA LABORAL
+--------------------
+
+Enternova S.A.S. — Arquitecto de Software / Desarrollador Backend
+2024 – Actualidad
+  - Definición de arquitectura limpia y estándares técnicos para soluciones de
+    abastecimiento y gestión de proveedores (Laravel 11/12, PHP, MySQL, Docker) con
+    +25% de eficiencia operativa.
+  - Diseño e implementación de API de pagos con FastAPI + Wompi; manejo simultáneo
+    de varios proyectos en distintos stacks, incl. servicios en Node.js.
+  - Reducción del 50% en tickets de error reportados en plataformas de producción
+    mediante refactorización y estandarización de código.
+
+Acotur — Desarrollador Backend · Freelance
+2023 – 2024
+  - Sitio destinosemergentescolombia.com (Laravel 11, Python, SQL Server, Docker,
+    Tailwind); -30% en tiempos de despliegue vía CI/CD con GitHub Actions.
+  - Aumento de visibilidad digital para touroperadores y destinos emergentes de
+    Colombia mediante presencia web B2B.
+
+Destia — Desarrollador Backend · Freelance
+2021 – 2023
+  - Etapas iniciales de Destia.co, sistema de CRM/reservas para touroperadores
+    (PHP, MySQL, Tailwind, Bootstrap).
+
+Nota: Destia y Acotur se desarrollaron en paralelo como freelance, mientras se
+mantenía el rol de tiempo completo en Baquianos Travel.
+
+Baquianos Travel — Desarrollador Backend · Tiempo completo
+2021 – 2024
+  - Plataformas de gestión turística (Laravel 9, Django, Python, MySQL, JS);
+    optimización de velocidad del sitio baquianos.com en un 30%.
+  - Automatización de tareas y procesos operacionales que ahorró 20h/semana de
+    trabajo manual.
+
+HABILIDADES TÉCNICAS
+---------------------
+Backend / Arquitectura:
+  - Laravel, PHP, Java (Avanzado)
+  - Node.js, FastAPI (Intermedio-Avanzado)
+  - Python, Django/Flask, Spring Boot (Intermedio)
+
+Bases de datos:
+  - MySQL (Avanzado)
+  - PostgreSQL, SQL Server (Intermedio)
+
+DevOps / Cloud:
+  - Docker, Linux/Nginx, CI/CD (GitHub Actions) (Avanzado)
+  - AWS, Cloudflare (Intermedio)
+  - Azure, GCP (Básico)
+
+Frontend (soporte) / IA:
+  - Vue.js, React, Tailwind (Intermedio)
+  - Ollama / integración de LLMs
+
+PROYECTOS DESTACADOS
+----------------------
+Destinos Emergentes Colombia
+  Plataforma web para promoción turística de destinos B2B (Laravel 11, SQL Server, CI/CD).
+  https://destinosemergentescolombia.com
+
+API de pagos (Enternova)
+  Servicio backend en FastAPI integrado con Wompi para procesar transacciones seguras.
+  https://pagos.suplind.com/
+
+Destia.co
+  Sistema operativo (CRM, reservas, cobros, WhatsApp) para agencias de viajes y
+  touroperadores.
+  https://destia.co
+
+FORMACIÓN
+----------
+Ingeniería en Sistemas — Universidad del Magdalena (Graduado)
+  Diploma: https://duvanmarriaga.github.io/curriculum/certificates/diploma-universidad-del-magdalena.pdf
+
+Inglés: B2 (en formación)
+
+Cursos y certificaciones:
+  - Laravel 12 (Udemy)
+  - Git (Platzi) — https://duvanmarriaga.github.io/curriculum/certificates/diploma-git-appsco-2017.pdf
+  - Cloud Computing AWS/Azure (Universidad de los Andes)
+
+Certificados laborales, diplomas y demás soportes disponibles en:
+https://duvanmarriaga.github.io/curriculum/#documentos
